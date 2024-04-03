@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/dk.css">
+</head>
+
+<body>
+    <form name="frm1"  method="post" action="dk.php" onsubmit="return kiemtra();">
+      <h4>DANG KY THANH VIEN</h4>
+      <label>Ma sinh vien</label> <input type="text" name="ms" >
+      <label>Ho va ten</label> <input type="text" name="ht">
+      <label>Email</label> <input type="email" name="email">
+      <label>Gioi tinh</label>
+      <div name="gioitinh" class="box">
+        <input type="radio" name="gioitinh" value="nam">Nam
+        <input type="radio" name="gioitinh" value="nu">Nu
+      </div>
+      <label>So thich</label>
+      <div name="sothich" class="box">
+        <input type="checkbox" name="sothich[]" value="docsach">Doc sach
+        <input type="checkbox" name="sothich[]" value="dulich">Du lich
+        <input type="checkbox" name="sothich[]" value="amnhac">Am nhac
+        <input type="checkbox" name="sothich[]" value="amthuc">Am thuc
+        <input type="checkbox" name="sothich[]" value="khac">Khac
+      </div>
+      <label>Quoc tich</label>
+      <select id="selectCountry" name="quoctich">
+        <option value="" disabled selected>Chọn quốc tịch</option>
+      </select>
+      <label>Ghi chu</label> <textarea name="ghichu"></textarea>
+      <button type="submit">Dang ky</button>
+    </form>
+    <script src="./js/dk.js"></script>
+    <!-- <iframe src="dk.php" frameborder="0"></iframe> -->
+</body>
+
+</html>
